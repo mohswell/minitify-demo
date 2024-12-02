@@ -1,0 +1,20 @@
+name: Bunjy AI Code Review
+
+on:
+  pull_request:
+    branches:
+      '*'
+
+jobs:
+  ai:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Bunjy-AI              
+        uses: mohswell/mintify@v1.1.4
+        with:
+          BASE_APP_URL: ${{ secrets.BASE_APP_URL }}
+          API_KEY: ${{ secrets.API_KEY }}
+          TOKEN: ${{ secrets.TOKEN }}
