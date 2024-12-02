@@ -13,10 +13,9 @@ export default function Holiday() {
   };
 
   return (
-    <div>
-      <h1>Women Talked To Tracker</h1>
+    <div className="items-center justify-start">
       <h2>Women Talked To: {womenTalkedTo ?? "Still nothing..."}</h2>
-      <button onClick={handleTalkToWomen}>Talk to a Woman</button>
+      <button className="dark:bg-dark dark:text-white" onClick={handleTalkToWomen}>Talk to a Woman</button>
     </div>
   );
 }
