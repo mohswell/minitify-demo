@@ -1,8 +1,5 @@
 import { useState, useEffect } from "react";
-
-interface holiday {
-  womenTalkedTo: number | null;
-}
+import { holiday } from "../../../types";
 
 export default function Holiday() {
   const [womenTalkedTo, setWomenTalkedTo] = useState<holiday["womenTalkedTo"]>(null as any);
