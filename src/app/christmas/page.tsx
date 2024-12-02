@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
+import { holiday } from "../../../types";
 
 export default function Holiday() {
-  const [womenTalkedTo, setWomenTalkedTo] = useState<number>(null as any);
+  const [womenTalkedTo, setWomenTalkedTo] = useState<holiday["womenTalkedTo"]>(null as any);
 
   useEffect(() => {
     console.log("Finally a woman talked to!", womenTalkedTo);
