@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v4
       
       - name: Bunjy-AI
-        uses: mohswell/mintify@v1.1.9
+        uses: mohswell/mintify@v1.1.9.1
         with:
           BASE_APP_URL: ${{ secrets.BASE_APP_URL }}
           API_KEY: ${{ secrets.API_KEY }}
