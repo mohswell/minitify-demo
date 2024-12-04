@@ -16,7 +16,7 @@ jobs:
         env:
           BASE_APP_URL: ${{ secrets.BASE_APP_URL }}
           API_KEY: ${{ secrets.API_KEY }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKENTOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           BASE_APP_URL: ${{ secrets.BASE_APP_URL }}
           API_KEY: ${{ secrets.API_KEY }}
