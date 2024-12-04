@@ -11,10 +11,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
-      - name: Bunjy-AI              
-        uses: mohswell/mintify@v1.1.4
+      
+      - name: Bunjy-AI
+        uses: mohswell/mintify@v1.1.8
         with:
           BASE_APP_URL: ${{ secrets.BASE_APP_URL }}
           API_KEY: ${{ secrets.API_KEY }}
-          TOKEN: ${{ secrets.TOKEN }}
+          # TOKEN: ${{ secrets.GITHUB_TOKEN }}
