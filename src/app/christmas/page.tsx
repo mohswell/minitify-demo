@@ -14,6 +14,7 @@ export default function Holiday() {
 
   return (
     <div className="items-center justify-start">
+      <p>Talk to one yet? LMAO!</p>
       <h2>Women Talked To: {womenTalkedTo ?? "Still nothing..."}</h2>
       <button className="dark:bg-dark dark:text-white" onClick={handleTalkToWomen}>Talk to a Woman</button>
     </div>
